@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li,
+a,
+input,
+button,
+select,
+option {
+    list-style: none;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    max-width: 1922px;
+    margin: 0 auto;
+    background: #171717;
+    padding: 0px 61px;
+    background-position-x: 0px;
+    background-position-y: 164px;
+    background-repeat: no-repeat;
+    background-image: url(/images/background/Mask\ Group.png);
+}

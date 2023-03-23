@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <title>Movie DB</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__nav">
+                <a href="#" class="header__logo"></a>
+                <ul class="header__list">
+                    <li class="header__item">Главная</li>
+                    <li class="header__item">
+                        Подборки
+                        <ul class="header__list1">
+                            <li class="header__item">Боевик</li>
+                            <li class="header__item">Военные</li>
+                            <li class="header__item">Детектив</li>
+                            <li class="header__item">Детский</li>
+                            <li class="header__item">Драма</li>
+                            <li class="header__item">Комедия</li>
+                            <li class="header__item">Криминал</li>
+                            <li class="header__item">Мелодрама</li>
+                            <li class="header__item">Триллер</li>
+                            <li class="header__item">Ужасы</li>
+                            <li class="header__item">Фантастика</li>
+                            <li class="header__item">Фентези</li>
+                        </ul>
+                    </li>
+                    <li class="header__item">По жанру</li>
+                    <li class="header__item">Фильмы</li>
+                    <li class="header__item">Сериалы</li>
+                    <li class="header__item">Мультфильмы</li>
+                    <li class="header__item">Аниме</li>
+                    <li class="header__item">Актёры</li>
+                </ul>
+                <input id="search" class="header__search" type="text" placeholder="Поиск по сайту">
+            </nav>
+            <div class="header__hero">
+                <div class="header__mainImg">
+                    <h1 class="header__heading">Лучшие фильмы всех времен</h1>
+                </div>
+                <p class="header__p">Мы собрали для Вас подборку лучших фильмов по теме “{название подборки}” с
+                    рейтингом от {минимальный рейтинг фильмов из подборки} и до {максимальный рейтинг фильмов из
+                    подборки}. В неё вошли фильмы
+                    следующих жанров: {жанр1}({число раз}), {жанр2}({число раз}), {жанр3}({число раз}). Самый новый
+                    фильм - {год} года, самый старый фильм - {год} года. Продолжительность фильмов от {минимальная
+                    продолжительность} до {максимальная продолжительность}. Выбирайте фильм и приятного просмотра!</p>
+            </div>
+        </header>
+        <main>
+            <section class="section">
+                <h1 class="section__h1">Лучшие фильмы подборки</h1>
+                <span class="section__span"></span>
+
+                <ul class="section__list" id="list" style="width: 400px;"></ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/util.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
